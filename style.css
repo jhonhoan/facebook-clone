@@ -21,13 +21,27 @@ body{
 }
 
 .left-login > img{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: -60px 0px 0px 144px;
     padding-bottom: 20px;
 
 }
 
+.left-login{
+    width: 50vm;
+    height: 100vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .left-login > h2{
-    margin: -34px 0px 0px 184px;
+ 
+   
 }
 
 .right-login{
@@ -42,7 +56,7 @@ body{
 
 .card-login{
     width: 55%;
-    margin: 16px -52px 22px -180px;
+    margin: 46px -52px 22px -180px;
     flex-direction: column;
     display: flex;
     align-items:center;
@@ -55,9 +69,11 @@ body{
 }
 
 .textfield{
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-bottom: 0px;
     
@@ -67,15 +83,19 @@ body{
 
 .textfield > input{
     
-    width: 350px;
+    width: 95%;
     height: 50px;
-    margin: 0px 0px 13px 0px;
+    margin: 0px 0px 13px 10px;
     font-size: 17px;
     padding: 0px 0px 0px 10px;
     box-sizing: border-box;
     border-radius: 5px;
     border-style: solid;
     border-color: rgb(226, 226, 226);
+    outline-color: rgb(99, 99, 228);
+   
+    
+    
     
     
     
@@ -83,22 +103,23 @@ body{
 
 
 .btn-login{
-    width: 349px;
+    width: 95%;
     height: 47px;
     background-color:  #1170ff ;
     border: none;
     border-radius: 5px;
-    
+    text-decoration: none;
     font-size: 20px;
+    color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.btn-login > a{
-    text-decoration: none;
-    color: white;
-}
+
 
 .a-login{
+    width: 100%;
+    margin: 0px -7px -10px 240px;
     color: #1170ff;
     padding: 15px;
     text-decoration: none;
@@ -115,22 +136,20 @@ body{
 .btn-sinup{
     border: none;
     background-color: rgb(34, 197, 34) ;
-    width: 150px;
-    height: 45px;
+    width: 43%;
+    height: 48px;
     border-radius: 5px;
     color: white;
     font-weight: bold;
     font-family: arial;
     font-size: 17px;
-    margin: 25px 0px 0px 0px;
+    margin: 37px 0px 0px 0px;
+    cursor: pointer;
     transition: .7s;
     
 }
 
-.btn-sinup > a{
-    color: white;
-    text-decoration: none;
-}
+
 
 p{
     font-family: arial;
@@ -167,5 +186,19 @@ h2{
     width: 500px;
 }
 
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 100%;
+        
+    }
+}
 
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login{
+        display: none;
+    }
+}
 
